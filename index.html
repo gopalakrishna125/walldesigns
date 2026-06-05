@@ -1,117 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wall Designs</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wall Designs</title>
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial,sans-serif;
-            background:#111;
-            color:white;
-        }
+<style>
 
-        header{
-            text-align:center;
-            padding:60px 20px;
-            background:black;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
-        h1{
-            color:#D4AF37;
-            font-size:50px;
-        }
+body{
+background:#0b0b0b;
+color:white;
+line-height:1.6;
+}
 
-        .hero{
-            text-align:center;
-            padding:40px;
-        }
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
 
-        .services{
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-            gap:20px;
-            padding:40px;
-        }
+header h1{
+font-size:70px;
+color:#D4AF37;
+margin-bottom:15px;
+}
 
-        .card{
-            background:#1a1a1a;
-            padding:20px;
-            border-radius:15px;
-            width:250px;
-            border:1px solid #D4AF37;
-        }
+header p{
+font-size:22px;
+max-width:700px;
+}
 
-        .gallery{
-            text-align:center;
-            padding:40px;
-        }
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
 
-        img{
-            width:300px;
-            margin:10px;
-            border-radius:10px;
-        }
+.section{
+padding:80px 20px;
+text-align:center;
+}
 
-        .contact{
-            text-align:center;
-            padding:40px;
-        }
+.section h2{
+color:#D4AF37;
+margin-bottom:20px;
+font-size:40px;
+}
 
-        .btn{
-            background:#D4AF37;
-            color:black;
-            padding:12px 20px;
-            text-decoration:none;
-            border-radius:10px;
-            font-weight:bold;
-        }
-    </style>
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#161616;
+padding:30px;
+border-radius:15px;
+border:1px solid #D4AF37;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#D4AF37;
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+}
+
+.contact{
+text-align:center;
+padding:80px 20px;
+background:#111;
+}
+
+.contact h2{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+color:#999;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:45px;
+}
+
+header p{
+font-size:18px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>WALL DESIGNS</h1>
-    <p>Premium Wallpapers • Blinds • Curtains</p>
+
+<h1>WALL DESIGNS</h1>
+
+<p>
+Premium Wallpapers, Wall Graphics, Blinds & Curtains
+for Homes, Offices and Commercial Spaces.
+</p>
+
+<a class="btn" href="https://wa.me/917386095196">
+Get Free Quote
+</a>
+
 </header>
 
-<section class="hero">
-    <h2>Transform Your Space with Luxury Designs</h2>
-    <p>Professional wallpapers, blinds and curtains for homes and offices.</p>
-</section>
+<section class="section">
 
-<section class="services">
+<h2>Our Services</h2>
+
+<div class="services">
 
 <div class="card">
-<h3>Wallpapers</h3>
-<p>Luxury and designer wallpapers.</p>
+<h3>Luxury Wallpapers</h3>
+<p>Premium wallpapers that transform ordinary walls into beautiful spaces.</p>
 </div>
 
 <div class="card">
 <h3>Wall Graphics</h3>
-<p>Custom graphics and feature walls.</p>
+<p>Custom graphics, feature walls and creative interior designs.</p>
 </div>
 
 <div class="card">
 <h3>Blinds</h3>
-<p>Modern roller and zebra blinds.</p>
+<p>Modern roller blinds, zebra blinds and office blinds.</p>
 </div>
 
 <div class="card">
 <h3>Curtains</h3>
-<p>Premium curtains for every room.</p>
+<p>Elegant curtains for homes, villas and commercial spaces.</p>
+</div>
+
 </div>
 
 </section>
 
-<section class="contact">
-<h2>Contact Us</h2>
-<p>Phone: 73860 95196</p>
-<a class="btn" href="https://wa.me/917386095196">WhatsApp Us</a>
+<section class="section">
+
+<h2>About Us</h2>
+
+<p style="max-width:800px;margin:auto;">
+At Wall Designs, we specialize in premium wallpapers,
+custom wall graphics, blinds and curtains. Our mission is
+to transform interiors with modern and luxurious designs
+that make every space unique.
+</p>
+
 </section>
+
+<section class="section">
+
+<h2>Our Projects</h2>
+
+<p>
+Project photos coming soon...
+</p>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 73860 95196</p>
+
+<p>📍 Hyderabad, Telangana</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/917386095196">
+WhatsApp Now
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Wall Designs. All Rights Reserved.
+
+</footer>
 
 </body>
 </html>
