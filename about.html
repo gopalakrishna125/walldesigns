@@ -97,7 +97,24 @@ box-shadow:0 5px 20px rgba(212,175,55,0.3);
 color:#D4AF37;
 margin-bottom:10px;
 }  
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
 
+.gallery img{
+width:100%;
+border-radius:15px;
+border:2px solid #D4AF37;
+transition:0.4s;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
 footer{
 background:black;
 text-align:center;
@@ -171,6 +188,21 @@ customer satisfaction in every project.
 <h3>Affordable Pricing</h3>
 <p>We offer premium interior solutions at competitive prices without compromising quality.</p>
 </div>
+
+</div>
+
+</section>
+<section class="content">
+
+<h2>Featured Projects</h2>
+
+<div class="gallery">
+
+<img src="project1.jpg.jpg" alt="Luxury Wallpaper Project">
+
+<img src="project4.jpg.jpg" alt="Premium Interior Design">
+
+<img src="project5.jpg.jpg" alt="Modern Wall Design">
 
 </div>
 
