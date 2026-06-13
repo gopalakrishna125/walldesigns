@@ -230,7 +230,11 @@ width:280px;
 }
 
 }
-
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
   .whatsapp-float{
     position:fixed;
     width:60px;
@@ -248,10 +252,14 @@ width:280px;
     justify-content:center;
     box-shadow:0 4px 12px rgba(0,0,0,0.3);
     z-index:1000;
+
+    animation:pulse 1.8s infinite;
+    transition:0.3s;
 }
 
 .whatsapp-float:hover{
-    transform:scale(1.1);
+    animation:none;
+    transform:scale(1.15);
 }
 </style>
 
@@ -292,7 +300,7 @@ for homes, offices and commercial spaces.
 Get Free Quote
 </a>
 
-<a class="btn" href="#projects">
+<a class="btn" href="projects.html">
 View Projects
 </a>
 
