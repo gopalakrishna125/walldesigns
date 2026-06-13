@@ -92,7 +92,26 @@ color:#D4AF37;
 margin-bottom:20px;
 margin-top:20px;
 }
+.catalogue-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+margin-top:40px;
+}
 
+.catalogue-card{
+background:#161616;
+border:1px solid #D4AF37;
+border-radius:15px;
+padding:25px;
+text-align:center;
+}
+
+.catalogue-card h2{
+color:#D4AF37;
+margin-bottom:20px;
+}
+    
 footer{
 background:black;
 text-align:center;
@@ -126,10 +145,10 @@ Explore our premium wallpaper collections and browse designs online.
 </p>
 
 <br><br>
+<div class="catalogue-grid">
+<div class="catalogue-card">
 
-<h2 class="catalogue-title">
-Aavana Wallpapers
-</h2>
+<h2>Aavana Wallpapers</h2>
 
 <a class="btn" href="Aavana Wallpapers_Part 1.pdf" target="_blank">
 📖 Part 1
@@ -138,6 +157,8 @@ Aavana Wallpapers
 <a class="btn" href="Aavana Wallpapers_Part 2.pdf" target="_blank">
 📖 Part 2
 </a>
+
+</div>
 
 <br><br><br>
 
@@ -193,7 +214,10 @@ Florence Wall Coverings
 📖 Part 3
 </a>
 
-<br><br>    
+<br><br>  
+    
+</div>  
+    
 <p style="color:#999;">
 Click a catalogue to view it instantly in your browser.
 </p>
