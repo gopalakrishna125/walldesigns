@@ -83,11 +83,16 @@ nav a{
     font-weight:600;
     transition:0.3s;
 }
+  
 
 nav a:hover{
     color:#D4AF37;
 }
-
+nav a.active{
+    color:#D4AF37;
+    border-bottom:2px solid #D4AF37;
+    padding-bottom:5px;
+}
 h1{
 font-size:48px;
 color:#D4AF37;
@@ -271,7 +276,7 @@ width:280px;
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
+    <a href="services.html" class="active">Services</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
