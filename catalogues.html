@@ -137,11 +137,18 @@ margin-top:20px;
 }
 .catalogue-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,350px));
-justify-content:center;
-gap:30px;
-margin-top:40px;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+max-width:1000px;
+margin:40px auto 0;
 }
+@media(max-width:768px){
+
+.catalogue-grid{
+grid-template-columns:1fr;
+}
+
+}  
 
 .catalogue-card{
 background:#161616;
@@ -149,7 +156,7 @@ border:1px solid #D4AF37;
 border-radius:15px;
 padding:25px;
 text-align:center;
-display:block;
+min-height:550px;
 }
 
 .catalogue-card h2{
