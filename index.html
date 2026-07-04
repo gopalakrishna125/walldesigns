@@ -55,7 +55,7 @@ transition:opacity 0.8s ease;
 }
 
 .loader-logo{
-width:180px;
+width:220px;
 margin-bottom:20px;
 animation:pulseLogo 1.8s infinite;
 }
@@ -63,8 +63,12 @@ animation:pulseLogo 1.8s infinite;
 #loader h1{
 color:#D4AF37;
 font-family:'Playfair Display',serif;
-font-size:42px;
-margin-bottom:10px;
+font-size:52px;
+margin-bottom:15px;
+text-shadow:
+0 0 10px rgba(212,175,55,0.4),
+0 0 20px rgba(212,175,55,0.2);
+animation:glow 2s ease-in-out infinite alternate;
 }
 
 #loader p{
@@ -88,11 +92,31 @@ opacity:1;
 transform:scale(1);
 opacity:0.8;
 }
-}  
+} 
+
+@keyframes glow{
+
+from{
+text-shadow:
+0 0 10px rgba(212,175,55,0.3),
+0 0 20px rgba(212,175,55,0.15);
+}
+
+to{
+text-shadow:
+0 0 18px rgba(212,175,55,0.7),
+0 0 35px rgba(212,175,55,0.35);
+}
+
+}
+  
 body{
 background:#0b0b0b;
 color:white;
 line-height:1.6;
+
+opacity:0;
+transition:opacity .8s ease;
 }
 
 header{
@@ -338,7 +362,7 @@ width:280px;
 
     <h1>JK Wall Designs</h1>
 
-    <p>Loading...</p>
+    <p>Crafting Beautiful Spaces...</p>
 
 </div>
 <header id="home">
@@ -534,10 +558,11 @@ window.addEventListener("load", function(){
         setTimeout(function(){
 
             document.getElementById("loader").style.display = "none";
+            document.body.style.opacity="1";
 
         },800);
 
-    },1800);
+    },1200);
 
 });
 </script>  
