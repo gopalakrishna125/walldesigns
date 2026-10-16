@@ -179,6 +179,98 @@ padding:20px;
 color:#999;
 }
 
+  
+/* Watch Our Work Section */
+.watch-section {
+    padding: 60px 20px;
+    background: #0b0b0b;
+    text-align: center;
+}
+
+.watch-section h2 {
+    color: #D4AF37;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.watch-intro {
+    color: #ddd;
+    margin-bottom: 35px;
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.video-card {
+    display: block;
+    padding: 12px;
+    background: #161616;
+    border: 1px solid #D4AF37;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
+}
+
+.video-thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 9 / 16;
+    background: #222;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(212, 175, 55, 0.95);
+    color: #111;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.video-card h3 {
+    color: #D4AF37;
+    margin: 15px 0 5px;
+}
+
+.video-card p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .watch-section h2 {
+        font-size: 30px;
+    }
+}
+
 </style>
 
 </head>
@@ -223,12 +315,50 @@ color:#999;
 <h3>Premium Wall Graphics</h3>
 </div>
 
+
 </div>
 
 </section>
+
+<!-- Watch Our Work Section -->
+<section class="watch-section" id="watch-our-work">
+
+    <h2>Watch Our Work</h2>
+
+    <p class="watch-intro">
+        Explore our wallpaper designs, professional installations
+        and stunning interior transformations.
+    </p>
+
+    <div class="video-gallery">
+
+        <a class="video-card"
+           href="https://www.instagram.com/reel/DehjLwnhvvC/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="video-thumbnail">
+                <img src="project1.jpg.jpg"
+                     alt="శ్రీనివాస కల్యాణం Wallpaper Installation">
+
+                <span class="play-button">
+                    <i class="fas fa-play"></i>
+                </span>
+            </div>
+
+            <h3>శ్రీనివాస కల్యాణం Wallpaper Installation</h3>
+            <p>Watch this project on Instagram</p>
+
+        </a>
+
+    </div>
+
+</section>
+
 <section class="content">
 
 <h2>Like What You See?</h2>
+
 
 <p>
 Contact JK Wall Designs today for premium wallpapers,
